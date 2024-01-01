@@ -7,6 +7,12 @@ categories: learning github
 
 ## Git CLI command learning
 
+<br>
+Initial commit - 19:52 <br>
+Finish time - 23:28
+<br>
+<br>
+
 <!-- CODE BLOCK -->
 {% highlight ruby %}
 Git show
