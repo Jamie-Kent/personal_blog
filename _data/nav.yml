@@ -1,10 +1,10 @@
-docs_list_title: mainNav
+# docs_list_title: mainNav
 
-- title: Home
-  url: index.html
+# - title: Home
+#   url: index.html
 
-- title: Portfolio
-  url: portfolio.html
+# - title: Portfolio
+#   url: portfolio.html
 
-- title: CV
-  url: /cv.html
+# - title: CV
+#   url: /cv.html
