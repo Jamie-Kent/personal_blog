@@ -9,7 +9,7 @@ categories: learning github
 **04/01/24**
 <br><br>
 **Research start - 21:45** <br>
-**Research finish - 23:15**
+**Research finish - 23:37**
 <br>
 <br>
 
