@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ubiquti Research
-date: 2024-01-01 23:11 +0000
+date: 2024-01-04 23:11 +0000
 categories: learning github
 ---
 
@@ -52,3 +52,62 @@ Essentially the gateway is for pretty dashboard / for inbuilt storage. Not sure 
 
 Further research needed here
 <br><br>
+
+<br>
+**05/01/24**
+<br><br>
+**Research start - 19:46** <br>
+**Research finish - 20:21**
+<br>
+**break - 10 min**
+<br>
+<br>
+
+### Further Research
+
+[YouTube: Unifi Home Network Upgrade - Why I finally switched](https://www.youtube.com/watch?v=wi_geRfabAs)
+
+He spoke about the fact that you could use [linuxserver/unifi-controller](https://hub.docker.com/r/linuxserver/unifi-controller) and run a docker image which you use to run the Unifi-controller.
+
+Checked reddit about this and found [Docker Vs. Raspberry Pi for Controller?](https://www.reddit.com/r/Ubiquiti/comments/xwhtka/docker_vs_raspberry_pi_for_controller/). In the initial statement the user said about hosting the docker image on a synology NAS. Someone in the comments posted a link to [Self-host the Unifi Controller on a Synology NAS](https://www.wundertech.net/self-host-the-unifi-controller-on-a-synology-nas/).
+
+I'm thinking that I may not need a CloudKey and could save 200 if I do decide to get cameras. Either way I think I'll order the access points then go from there. Something important to note is that the **firmware should be updated** if kit is bought.
+<br>
+
+[Reddit: I understand why people don’t like Ubiquiti now](https://www.reddit.com/r/Ubiquiti/comments/udvz31/i_understand_why_people_dont_like_ubiquiti_now/)
+
+I checked Reddit for reasons not to buy the kit before making the purchase and found the following post. This was a small business complaining about multiple cameras. Someone educated replied and essentially said that Ubiquti is fine but maybe not for his use case / they need to spend more than what that are. This makes me think that it should be ok to order the access points.
+<br><br>
+
+### Placing an order
+
+Order placed for 3x U6+ Access Points. From here we can then see if anything is else is required and can also tune the equipment on arrival. I was going to order 2 however 3 should be fine as if 2 is enough for the house, one can go in the garage.
+
+[U6+ Product Page](https://uk.store.ui.com/uk/en/products/u6-plus)
+
+I've placed an order but cancelled it as I was supposed to add a switch to the order using guidance from this reddit post [Cancelling order..](https://www.reddit.com/r/Ubiquiti/comments/m5s0bx/cancelling_order/). Now I'm reading deeper into it, it sounds like the U6+ actually has some issues anyway. I thought it was the same AP as the U6 Lite which it's not.
+
+[U6+ vs U6-Lite oddities](https://www.reddit.com/r/Ubiquiti/comments/16d0yi4/u6_vs_u6lite_oddities/)
+
+Read this article which says about RAM differences between the U6+ U6 Lite and there is mention of the Pro too. Sounds like it goes U6+ then U6 Lite and then the U6 Pro in terms of how much RAM each has.
+
+Someone also said in another article about there being issues with 2.4Ghz and saying that the AP's perform way better on 5Ghz. I'm struggling to find any more info about this and cannot find the post I read it on.
+
+Trying to understand how PoE works at the moment so that whatever AP's I get I don't have to run cables to. This would neaten things up a little. Just read through [Recommended hardware to meet Unifi POE requirements?](https://www.reddit.com/r/Ubiquiti/comments/13srj0d/recommended_hardware_to_meet_unifi_poe/) and am going to read through
+<br><br>
+
+Checked power consumption for required devices:
+
+[Flex Mini](https://uk.store.ui.com/uk/en/pro/category/all-switching/products/usw-flex-mini) 
+
+2.5W x 2 = 5W
+<br><br>
+
+[U6+](https://uk.store.ui.com/uk/en/products/u6-plus) 
+
+9W x 3 = 27W
+
+**Total:** 27+5 = 32W
+
+I read through this [POE switch vs injectors for 2-3 APs?](https://www.reddit.com/r/Ubiquiti/comments/ir1r1u/poe_switch_vs_injectors_for_23_aps/) but didn't understand the logic or what was being said.
+
