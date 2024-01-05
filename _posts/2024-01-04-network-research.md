@@ -2,13 +2,16 @@
 layout: post
 title: Ubiquti Research
 date: 2024-01-04 23:11 +0000
-categories: learning github
+categories: learning networking
 ---
 
 ## Table of Contents
 
 - [Overview](#overview)
 - [Initial Research](#initial-research)
+    - [Access point research](#access-point-research)
+    - [Camera research](#camera-research)
+    - [Chat GPT storage amount](#chat-gpt-storage-amount)
 - [Further Research](#further-research)
     - [Placing an order](#placing-an-order)
     - [Power Requiremnents](#power-requirements)
@@ -26,6 +29,8 @@ The idea of this research is to allow for a new network to be setup using only U
 ### Initial Research
 04/01/24 | 21:45 | 23:37
 <br><br>
+
+### Access point research
 
 [YouTube: 2022 Complete Unifi Setup Guide](https://www.youtube.com/watch?v=kGBFkIzf6x0)
 
@@ -47,10 +52,14 @@ Essentially the U6 Lite should be fine for home. Anything else is kinda overkill
 You can escape a pipe in markdown using a backslash 
 <br><br>
 
+### Camera research
+
 [YouTube: Unifi Protect G5 bullet review](https://www.youtube.com/watch?v=BbmrdY2lA5k)
 
 The g4 bullet is better than G5 as it's higher res / looks better at night. There is a comparison on the video
 <br><br>
+
+### Chat GPT storage amount
 
 **Chat with GPT** <br>
 I then wondered how much storage will be needed to store 1 months worth of footage for 2x G4 cameras which are recording in 2k for a month straight. I asked GPT this and the following is a link to the chat. [link to ChatGPT](https://chat.openai.com/share/b955b46b-bae4-4b3d-984e-a2b84a373c51)
