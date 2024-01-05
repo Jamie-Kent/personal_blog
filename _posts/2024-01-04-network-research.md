@@ -5,14 +5,27 @@ date: 2024-01-04 23:11 +0000
 categories: learning github
 ---
 
-<br>
-**04/01/24**
-<br><br>
-**Research start - 21:45** <br>
-**Research finish - 23:37**
-<br>
+## Table of Contents
+
+- [Overview](#overview)
+- [Initial Research](#initial-research)
+- [Further Research](#further-research)
+    - [Placing an order](#placing-an-order)
+    - [Power Requiremnents](#power-requirements)
+    - [PoE Switch vs PoE Injector](#poe-switch-vs-poe-injector)
+
 <br>
 
+## Overview
+The Wi-Fi in our house is currently bad when not close to the router. We have multiple networks setup within the house as we have a router which has direct connections to 3 rooms in the house and then to a seperate mesh network. The mesh network is then scattered around the house and creates it's own seperate network. This means we have 2x SSID's and there is conflict in the house between the networks. In the furthest parts of the house the internet signal is poor. I've tried to setup an AP on one side but the AP signals kept dropping (I think the AP is at fault).
+
+The idea of this research is to allow for a new network to be setup using only Ubiquti kit where possible or at least Ubiquti AP's as they're supposed to be good and easy to manager / nice to manage with the Unifi-controller giving a good idea on what's going on on the network and displaying things in a user friendly way (showing the topology of the network, nice UI etc).
+
+<br><br>
+
+### Initial Research
+04/01/24 | 21:45 | 23:37
+<br><br>
 
 [YouTube: 2022 Complete Unifi Setup Guide](https://www.youtube.com/watch?v=kGBFkIzf6x0)
 
@@ -53,17 +66,10 @@ Essentially the gateway is for pretty dashboard / for inbuilt storage. Not sure 
 Further research needed here
 <br><br>
 
-<br>
-**05/01/24**
-<br><br>
-**Research start - 19:46** <br>
-**Research finish - 20:21**
-<br>
-**break - 10 min**
-<br>
-<br>
 
 ### Further Research
+05/01/24 | 19:46 | 23:35 | 10 min break
+<br><br>
 
 [YouTube: Unifi Home Network Upgrade - Why I finally switched](https://www.youtube.com/watch?v=wi_geRfabAs)
 
@@ -71,7 +77,7 @@ He spoke about the fact that you could use [linuxserver/unifi-controller](https:
 
 Checked reddit about this and found [Docker Vs. Raspberry Pi for Controller?](https://www.reddit.com/r/Ubiquiti/comments/xwhtka/docker_vs_raspberry_pi_for_controller/). In the initial statement the user said about hosting the docker image on a synology NAS. Someone in the comments posted a link to [Self-host the Unifi Controller on a Synology NAS](https://www.wundertech.net/self-host-the-unifi-controller-on-a-synology-nas/).
 
-I'm thinking that I may not need a CloudKey and could save 200 if I do decide to get cameras. Either way I think I'll order the access points then go from there. Something important to note is that the **firmware should be updated** if kit is bought.
+I'm thinking that I may not need a CloudKey and could save 200 if I do decide to get cameras. Either way I think I'll order the access points then go from there. Something important to note is that the **firmware should be updated** if kit is bought as this can prevent issues right away.
 <br>
 
 [Reddit: I understand why people don’t like Ubiquiti now](https://www.reddit.com/r/Ubiquiti/comments/udvz31/i_understand_why_people_dont_like_ubiquiti_now/)
@@ -85,7 +91,7 @@ Order placed for 3x U6+ Access Points. From here we can then see if anything is 
 
 [U6+ Product Page](https://uk.store.ui.com/uk/en/products/u6-plus)
 
-I've placed an order but cancelled it as I was supposed to add a switch to the order using guidance from this reddit post [Cancelling order..](https://www.reddit.com/r/Ubiquiti/comments/m5s0bx/cancelling_order/). Now I'm reading deeper into it, it sounds like the U6+ actually has some issues anyway. I thought it was the same AP as the U6 Lite which it's not.
+I've placed an order but cancelled it as I was supposed to add a switch to the order using guidance from this reddit post [Cancelling order](https://www.reddit.com/r/Ubiquiti/comments/m5s0bx/cancelling_order/). Now I'm reading deeper into it, it sounds like the U6+ actually has some issues anyway. I thought it was the same AP as the U6 Lite which it's not.
 
 [U6+ vs U6-Lite oddities](https://www.reddit.com/r/Ubiquiti/comments/16d0yi4/u6_vs_u6lite_oddities/)
 
@@ -96,18 +102,38 @@ Someone also said in another article about there being issues with 2.4Ghz and sa
 Trying to understand how PoE works at the moment so that whatever AP's I get I don't have to run cables to. This would neaten things up a little. Just read through [Recommended hardware to meet Unifi POE requirements?](https://www.reddit.com/r/Ubiquiti/comments/13srj0d/recommended_hardware_to_meet_unifi_poe/) and am going to read through
 <br><br>
 
-Checked power consumption for required devices:
+### Power Requirements:
 
-[Flex Mini](https://uk.store.ui.com/uk/en/pro/category/all-switching/products/usw-flex-mini) 
+The [Flex Mini](https://uk.store.ui.com/uk/en/pro/category/all-switching/products/usw-flex-mini) requires **2.5W** per unit and I'm planning on getting **2** units which would be a total of **5W**
 
-2.5W x 2 = 5W
-<br><br>
+The [U6+](https://uk.store.ui.com/uk/en/products/u6-plus) requires **9W** per unit and I'm planning on getting **3** units which would be a total of **27W**
 
-[U6+](https://uk.store.ui.com/uk/en/products/u6-plus) 
+Overall Total: **32W**
 
-9W x 3 = 27W
+<br>
 
-**Total:** 27+5 = 32W
+### PoE Switch vs PoE Injector
 
 I read through this [POE switch vs injectors for 2-3 APs?](https://www.reddit.com/r/Ubiquiti/comments/ir1r1u/poe_switch_vs_injectors_for_23_aps/) but didn't understand the logic or what was being said.
 
+and this [I bought a house with 3 Unifi access points installed throughout the house but I have no idea what I need to use them.](https://www.reddit.com/r/HomeNetworking/comments/kqkhup/i_bought_a_house_with_3_unifi_access_points/)
+
+People just talk about whether it's worth getting switches or PoE. Nothing of use here
+
+Video on how to setup an AP with the app [How To Setup a UniFi Access Point WITHOUT A CONTROLLER! (QuickTip)](https://www.youtube.com/watch?v=SOY5Dcu9dwg)
+
+I finally found what I was looking for [Cheap POE Gigabit Switch 8 Ports?](). Someone on this post added the following photo:
+
+When searching [Reddit](https://www.reddit.com/r/HomeNetworking/comments/s3oyea/cheap_poe_gigabit_switch_8_ports/) for cheap PoE switches someone suggested what I was looking for, an 8 port PoE switch. 4 of the ports are PoE and the other 4 are not. It has an overall max power of 64W which would be fine for my usage as I only need 32W as calculated earlier. This would allow for an additional 32W with the remaining 1 port so maybe this could be used to beam Wi-Fi to the garage.
+
+<br>
+
+![8-port-amazon-switch](/img/Screenshot 2024-01-05 at 23.09.47.png)
+
+[Switch suggested](https://www.amazon.com/TP-Link-TL-SG108PE-Shielded-Lifetime-Protection/dp/B01BW0AD1W/?th=1)
+
+On the same [Reddit](https://www.reddit.com/r/HomeNetworking/comments/s3oyea/cheap_poe_gigabit_switch_8_ports/) post there was some information regarding security cameras / NVR's
+
+![VLAN-DVR-advice](/img/Screenshot 2024-01-05 at 23.29.15.png)
+
+[Chat GPT link](https://chat.openai.com/share/c2721371-04a1-4077-9682-901431bbcbe9)
