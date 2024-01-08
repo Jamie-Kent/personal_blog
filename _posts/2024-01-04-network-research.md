@@ -16,6 +16,13 @@ categories: learning networking
     - [Placing an order](#placing-an-order)
     - [Power Requiremnents](#power-requirements)
     - [PoE Switch vs PoE Injector](#poe-switch-vs-poe-injector)
+- [Further Research pt2](#further-research-pt2)
+    - [2.4Ghz vs 5Ghz](#24ghz-vs-5ghz)
+    - [What is MIMO](#what-is-mimo)
+    - [PoE switch options](#poe-switch-options)
+- [Conclusion from Research](#conclusion-from-research)
+
+
 
 <br>
 
@@ -34,7 +41,7 @@ The idea of this research is to allow for a new network to be setup using only U
 
 [YouTube: 2022 Complete Unifi Setup Guide](https://www.youtube.com/watch?v=kGBFkIzf6x0)
 
-This would have been more useful as a guide after all kit arrives. Not worth watching the reasearch stage
+This would have been more useful as a guide after all kit arrives. Not worth watching the research stage
 <br><br>
 
 [YouTube: Is Ubiquiti UniFi Worth It? \| New Network Setup](https://www.youtube.com/watch?v=cwc9GgFs_gE)
@@ -111,7 +118,7 @@ Someone also said in another article about there being issues with 2.4Ghz and sa
 Trying to understand how PoE works at the moment so that whatever AP's I get I don't have to run cables to. This would neaten things up a little. Just read through [Recommended hardware to meet Unifi POE requirements?](https://www.reddit.com/r/Ubiquiti/comments/13srj0d/recommended_hardware_to_meet_unifi_poe/) and am going to read through
 <br><br>
 
-### Power Requirements:
+### Power Requirements
 
 The [Flex Mini](https://uk.store.ui.com/uk/en/pro/category/all-switching/products/usw-flex-mini) requires **2.5W** per unit and I'm planning on getting **2** units which would be a total of **5W**
 
@@ -123,17 +130,25 @@ Overall Total: **32W**
 
 ### PoE Switch vs PoE Injector
 
-I read through this [POE switch vs injectors for 2-3 APs?](https://www.reddit.com/r/Ubiquiti/comments/ir1r1u/poe_switch_vs_injectors_for_23_aps/) but didn't understand the logic or what was being said.
+[POE switch vs injectors for 2-3 APs?](https://www.reddit.com/r/Ubiquiti/comments/ir1r1u/poe_switch_vs_injectors_for_23_aps/) 
 
-and this [I bought a house with 3 Unifi access points installed throughout the house but I have no idea what I need to use them.](https://www.reddit.com/r/HomeNetworking/comments/kqkhup/i_bought_a_house_with_3_unifi_access_points/)
+I read through this but didn't understand the logic or what was being said.
+
+[I bought a house with 3 Unifi access points installed throughout the house but I have no idea what I need to use them.](https://www.reddit.com/r/HomeNetworking/comments/kqkhup/i_bought_a_house_with_3_unifi_access_points/)
 
 People just talk about whether it's worth getting switches or PoE. Nothing of use here
 
-Video on how to setup an AP with the app [How To Setup a UniFi Access Point WITHOUT A CONTROLLER! (QuickTip)](https://www.youtube.com/watch?v=SOY5Dcu9dwg)
+[How To Setup a UniFi Access Point WITHOUT A CONTROLLER! (QuickTip)](https://www.youtube.com/watch?v=SOY5Dcu9dwg)
 
-I finally found what I was looking for [Cheap POE Gigabit Switch 8 Ports?](). Someone on this post added the following photo:
+Video on how to setup an AP with the app 
 
-When searching [Reddit](https://www.reddit.com/r/HomeNetworking/comments/s3oyea/cheap_poe_gigabit_switch_8_ports/) for cheap PoE switches someone suggested what I was looking for, an 8 port PoE switch. 4 of the ports are PoE and the other 4 are not. It has an overall max power of 64W which would be fine for my usage as I only need 32W as calculated earlier. This would allow for an additional 32W with the remaining 1 port so maybe this could be used to beam Wi-Fi to the garage.
+[Cheap POE Gigabit Switch 8 Ports?]()
+
+I finally found what I was looking for. Someone on this post added the following photo:
+
+[Reddit](https://www.reddit.com/r/HomeNetworking/comments/s3oyea/cheap_poe_gigabit_switch_8_ports/)
+
+When searching for cheap PoE switches someone suggested what I was looking for, an 8 port PoE switch. 4 of the ports are PoE and the other 4 are not. It has an overall max power of 64W which would be fine for my usage as I only need 32W as calculated earlier. This would allow for an additional 32W with the remaining 1 port so maybe this could be used to beam Wi-Fi to the garage.
 
 <br>
 
@@ -146,3 +161,61 @@ On the same [Reddit](https://www.reddit.com/r/HomeNetworking/comments/s3oyea/che
 ![VLAN-DVR-advice](/img/Screenshot 2024-01-05 at 23.29.15.png)
 
 [Chat GPT link](https://chat.openai.com/share/c2721371-04a1-4077-9682-901431bbcbe9)
+
+### Further research pt2
+09/01/24 | 20:44 | 22:55
+
+Watched a tutorial on how to setup Unifi Protect so that the footage is streamed to the Synology camera system [Adding Cameras to Synology from Unifi](https://www.youtube.com/watch?v=AJYEy093Cdo)
+
+
+I then looked up whether it's worth getting a UDM Pro or the UDM SE and found [Dream Machine Pro vs SE?](https://www.reddit.com/r/Ubiquiti/comments/uj20p7/dream_machine_pro_vs_se/). As the UDMP SE also has the PoE ports people say that this is a better option.
+
+Checked some comparisons [U6+ v U6 lite](https://www.reddit.com/r/Ubiquiti/comments/16sh8zc/u6_v_u6_lite/) and [U6+ vs U6 lite](https://www.reddit.com/r/Ubiquiti/comments/14ipulk/u6_vs_u6_lite/). There is some mention of the U6 Pro which sounds to be the most reliable. It sounds like the benefit of the U6+ is that it has stronger connection but uses more RAM. I think I saw mention of the U6+ having less RAM than the U6 Lite in another post. There was also mention that the U6+ had WiFi 6 on the 2.4Ghz band which the U6 Lite doesn't.
+
+I then saw this post where a Network technician says to get the U6 Pro. I'm feeling like the U6 Pro is the most solid option and will be the most reliable [Upgrading my setup: Looking for input on the U6 Plus vs. U6 Lite (currently sold out)](https://www.reddit.com/r/Ubiquiti/comments/14mnvu3/upgrading_my_setup_looking_for_input_on_the_u6/)
+
+Watched this video twice after reading a reddit post about the U7 Pro [U7-Pro is HERE! Testing UniFi's First Wi-Fi 7 Access Point](https://www.youtube.com/watch?v=7JNXghzzaZc)
+
+### 2.4Ghz vs 5Ghz
+
+Read the following post [Wifi 6 and 2.4Ghz question](https://www.reddit.com/r/HomeNetworking/comments/106iduw/wifi_6_and_24ghz_question/)
+
+I started to read about signals to work out whether I'd benefit from the U6 Pro's 4x4 Mimo > the U7 Pro's 6Ghz. I found out that 2.4Ghz has more range but is generally a slower connection. This can be used for IoT devices as they're on older hardware and don't need quick speeds. Newer devices like phones are better connected on a 5Ghz network but the range may suffer slightly.
+
+This means that I would need to setup 2x VLAN's, 1 which is a 2.4Ghz network for IoT devies, another which is 5Ghz for mobiles / laptops etc. This further clarifies that the U6 Pro is likely the best option but I will research this further.
+
+### What is MIMO
+
+[✅ How Much Faster Is 4x4 vs 2x2 MIMO External Antenna On T-Mobile 5G Home Internet? - FAQ #2](https://www.youtube.com/watch?v=ix3iKr7ZAbA)
+
+It feels like the best option is the U6 Pro due to reliability and that it's got 4x4 MIMO. The U7 Pro has Ghz but it seems like that is more if you have gigabit internet speeds which we don't therefore it doesn't seem worth the extra £20. The price difference is £152.40 or £171.60
+
+### PoE switch options
+
+The vast majority for people say that it's not worth using injectors. The reason for this is that they cause inconsistencies in the network and can create failures which are hard to troubleshooting and can break kit if they fail - overall not worth.
+
+I then went back to research PoE switches and saw the return of the TP-Link switch. I looked up the difference between a TP-Link switch vs a Ubiquti one to see what I'd be missing if I swapped between kit.
+
+You may lose the ability to turn off AP's remotely and also you may lose the ability to create VLAN's with non-Ubiuti kit. These are 2 things which I plan on doing therfore I think it makes sense to get a Ubiuti switch.
+
+It doesn't currently make sense to get a Dream Machine due to having no cameras but does make sense to get an 8 port switch like this [Lite 8 PoE](https://uk.store.ui.com/uk/en/pro/category/all-switching/products/.usw-lite-8-poe) as an in the middle step.
+
+I found this guide which spoke about whether it's worth getting a  [Unifi switch or not?](https://www.reddit.com/r/Ubiquiti/comments/171btbv/unifi_switch_or_not/)
+
+>Amiga07800 . 3 mo. ago <br>
+>The 16 ports has a VERY low PoE budget than won’t be enough for you. You have some other options:
+>1. Swap UDM Pro for the SE - 95W PoE on 8 ports - and eventually add a non PoE UniFi switch
+>2. Use TWO USW-Lite-8-PoE, 104W PoE budget,” 
+>
+>Beside, I REALLY suggest to swap the U6+ for the U6-Pro, they are vastly superior (and have a Qualcomm chipset)
+
+This guy suggested the U6 Pro's which I think are the better option now and also suggested either the 8 port switch or a UDM SE.
+
+### Conclusion from research
+I don't much more research is required here. I Will do some final checks tomorrow but I think this should all now be ok to order. I will setup search alerts on eBay over the coming weeks to try to get some money off of the AP's as they sell for £135 instead of £154. Also I might be able to pickup the 8 port switch from a 3rd party site without paying the £10 delivery fee which Ubiquti charge.
+
+In regards to setting up a Unifi Controller I will run this on my laptop and will think about a solution for this long term. I have a couple of cheap Raspberry Pi's so maybe able to use one of these to turn the docker image as self-hosted controller to keep it up 24/7.
+
+The plan is to setup 3x networks. 5Ghz networks for phones, this will be our primary network for laptops/tablets/mobiles. Another 2.4Ghz network which will be used for IoT devices. An additional guest network. I think Ubiquti has an easy setup option for this but I'll likely refer back to the video at the top of this article and then also fine some other information on ideal network setups.
+
+I will add more sections to this as I configure the network and also after buying kit to put the price I paid for everything
