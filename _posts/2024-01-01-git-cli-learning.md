@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Learning notes
+title: Git CLI Learning
 date: 2024-01-01 23:11 +0000
 categories: learning github
 ---
 
-## Git CLI command learning
+## Learning
 
 <br>
 Initial commit - 19:52 <br>

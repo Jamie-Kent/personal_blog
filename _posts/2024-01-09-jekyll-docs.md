@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Reading through Jekyll docs
-date: 2024-01-09 23:11 +0000
+title: "Reading through Jekyll docs"
+date: 2024-01-09 19:12 +0000
 categories: learning jekyll
 ---
 

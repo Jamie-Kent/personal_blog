@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Home Network (Project)
+title: "Home Network (Project)"
 date: 2024-01-04 23:11 +0000
 categories: learning networking
 ---
