@@ -21,9 +21,10 @@
 title: James Kent
 email: jmeknt@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+ This is going to be a site to tell you about me, showcase 
+ my work and also for me to have a space to be able to blog 
+ which will also serve as a place to time track how much 
+ learning I'm doing in my free time.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
