@@ -12,6 +12,7 @@ categories: learning networking
     - [Access point research](#access-point-research)
     - [Camera research](#camera-research)
     - [Chat GPT storage amount](#chat-gpt-storage-amount)
+    - [Do I need a Unifi gateway?](#do-i-need-a-unifi-gateway)
 - [Further Research](#further-research)
     - [Placing an order](#placing-an-order)
     - [Power Requiremnents](#power-requirements)
@@ -21,6 +22,8 @@ categories: learning networking
     - [What is MIMO](#what-is-mimo)
     - [PoE switch options](#poe-switch-options)
 - [Conclusion from Research](#conclusion-from-research)
+    - [Setting up the Inifi Controller](#setting-up-the-unifi-controller)
+    - [Is a security gateway needed?](#is-a-security-gateway-needed)
 
 
 
@@ -76,6 +79,8 @@ I then wondered how much storage will be needed to store 1 months worth of foota
 <br><br>
 
 [Reddit: Do I need a Unifi gateway?](https://www.reddit.com/r/UNIFI/comments/15rgxt3/do_i_need_a_unifi_gateway/)
+
+### Do I need a Unifi gateway?
 
 Essentially the gateway is for pretty dashboard / for inbuilt storage. Not sure there is much other reason to use it. Someone suggested usign a RaspberryPi as a cloud key using something called [UnifiPi](https://unifipi.com/)
 
@@ -219,3 +224,80 @@ In regards to setting up a Unifi Controller I will run this on my laptop and wil
 The plan is to setup 3x networks. 5Ghz networks for phones, this will be our primary network for laptops/tablets/mobiles. Another 2.4Ghz network which will be used for IoT devices. An additional guest network. I think Ubiquti has an easy setup option for this but I'll likely refer back to the video at the top of this article and then also fine some other information on ideal network setups.
 
 I will add more sections to this as I configure the network and also after buying kit to put the price I paid for everything
+
+### 13/01/24 
+14:34
+
+[The New Best UniFi Home Router!? Review and Installation](https://www.youtube.com/watch?v=Xf6PycK3mY0)
+
+Basically the new product is shit
+
+14:48
+
+15:54
+
+[Home Network Tour with UniFi Dream Router](https://www.youtube.com/watch?v=PyDpLJIKg0M)
+
+The reason you would want to use Ubiquiti switches is so that you can put them on seperate VLAN's and manage the ports inidivually from the Unifi Controller page
+
+### Setting up the Unifi-Controller
+
+[UI Site Manager](https://unifi.ui.com/)
+
+[Self Hosted UniFi Network Application Controller Install Tutorial](https://www.youtube.com/watch?v=lkUhWnDPutg)
+
+He shows how to self host the Unifi app on a uBuntu image and provides the code
+
+### Is a security gateway needed?
+
+[UniFi Controller: How to Set Up a Simple Ubiquiti UniFi Network](https://www.youtube.com/watch?v=PAuteE-Jr9E)
+
+This was good at it summarised what is needed for a basic Ubiquti network
+
+[2021 Complete Unifi Setup Guide](https://www.youtube.com/watch?v=xhmJxYllnWg)
+
+This video shows that 
+
+
+[I'm getting rid of my Unifi Dream Router…](https://www.youtube.com/watch?v=YSFo-DfmucM)
+
+He speaks about the differences between the UDM (Ubiquti Dream Machine) and the UDM SE (Ubiquiti Dream Machine Special Eddition)
+
+He says the only differnces are:
+1. The UDM has 6 less PoE ports
+2. The UDM doesn't support the really high speeds (multiple Gbs)
+3. The UDM only has 128 + SD storage for cameras
+
+18:24 end
+
+2214 start
+
+[Best Ubiquiti router for a setup like mine](https://www.reddit.com/r/Ubiquiti/comments/13e84s1/best_ubiquiti_router_for_a_setup_like_mine/)
+
+everyone says to get the UDM SE, not sure what other options there are?
+
+It's hard to work out what routers exist within the Unifi line and if one is even needed to use the full functionality of the Unifi offering.
+
+
+Spoke to my Dad this evening to let him know that it's hard to proceed any further given that depending on the camera requirements this will dictate what networking equipment to go. If we're definitley going to get cameras then it makes most sense to get a UDM SE to avoid buying switches seperate to the NVR which will be needed to store the footage from the cameras. Also it will work out cheaper than getting all individual parts and will also make for a cleaner setup overall as it's basically an all in one setup
+
+
+start unknown
+14/01/24
+
+alex ISP setup
+
+
+
+11:52 end
+
+
+start 17:34
+
+network port
+
+patched it into a wall socket with Dad
+
+we use option X out of either the A or B options
+
+18:15
