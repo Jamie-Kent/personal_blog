@@ -8,7 +8,6 @@ categories: learning cabling
 ## Table of Contents
 
 - [Overview](#overview)
-    - [Before Picture](#before-picture)
 - [Initial Research](#initial-research)
     - [Reddit Guide](#reddit-guide)
 - [Cable management summary](#cable-managment-summary)
@@ -22,9 +21,6 @@ This is going to be an article about the before and after of how my cabling look
 
 My desk is currently being used for me and my brother as we're currently working from home. As of tomorrow we're going to be working in the office again so I can now think about properly managing my desk to neaten up the cables.
 
-### Before picture
-
-![before-image-of-desk-cabling](/img/cable%20management/07B42236-8ACA-466D-BAC1-7A7B62EEE932.JPG)
 
 ## Initial Research
 Start - 1820
