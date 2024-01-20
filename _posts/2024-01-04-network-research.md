@@ -22,8 +22,12 @@ categories: learning networking
     - [What is MIMO](#what-is-mimo)
     - [PoE switch options](#poe-switch-options)
 - [Conclusion from Research](#conclusion-from-research)
-    - [Setting up the Inifi Controller](#setting-up-the-unifi-controller)
+    - [Setting up the Unifi-Controller](#setting-up-the-unifi-controller)
     - [Is a security gateway needed?](#is-a-security-gateway-needed)
+    - [Purchases](#purchases)
+    - [Fixing WiFiman](#fixing-wifiman)
+    - [Test results from Dan's room](#test-results-from-dans-room)
+- [Configuration from Unifi-Controller](#configuration-from-unifi-controller)
 
 
 
@@ -225,16 +229,13 @@ The plan is to setup 3x networks. 5Ghz networks for phones, this will be our pri
 
 I will add more sections to this as I configure the network and also after buying kit to put the price I paid for everything
 
-### 13/01/24 
-14:34
+### 
 
-[The New Best UniFi Home Router!? Review and Installation](https://www.youtube.com/watch?v=Xf6PycK3mY0)
+13/01/24 
 
-Basically the new product is shit
+15:54 start?
 
-14:48
-
-15:54
+### Are Unifi switches needed?
 
 [Home Network Tour with UniFi Dream Router](https://www.youtube.com/watch?v=PyDpLJIKg0M)
 
@@ -270,7 +271,7 @@ He says the only differnces are:
 
 18:24 end
 
-2214 start
+22:14 start
 
 [Best Ubiquiti router for a setup like mine](https://www.reddit.com/r/Ubiquiti/comments/13e84s1/best_ubiquiti_router_for_a_setup_like_mine/)
 
@@ -301,3 +302,158 @@ patched it into a wall socket with Dad
 we use option X out of either the A or B options
 
 18:15
+
+
+start 21:00
+
+### Purchases
+
+10/01/24
+
+U6-pro
+£117
+ebay
+
+13/01/24
+
+U6-pro
+£129.99
+ebay
+
+16/01/24
+
+USW-flex-mini
+£29.29
+ebay
+
+19/01/24
+start 18:56
+
+Tried to download the Unifi-controller from [Self-Hosting a UniFi Network Server](https://help.ui.com/hc/en-us/articles/360012282453-Self-Hosting-a-UniFi-Network-Server#:~:text=Start%20the%20newly%20installed%20UniFi,Adopt%20your%20first%20UniFi%20device.)
+
+19:36 - managed to finally adopt the device after mutliple resets of the device. Had to plug it directly into the router rather than into the wall port in the kitchen.
+
+end 19:37 gym session
+
+start 20:53
+
+Managed to connect to the AP
+
+You have to create a new network from within the Unifi Controller
+
+Wifiman is not working when viewing the signal strength of floor plan pages on my phone within the app
+
+downloaded wifiman on my macbook, it still is not doing signal strength and floor plan
+
+unboxed the 8 port poe switch
+
+If I'm unable to use the PoE from the switch I can always use the PoE injector which came with one of the AP's that I bought
+
+Found this video [Unifi Gigabit Managed Switch Lite 8 PoE](https://www.youtube.com/watch?v=lWM0KnAQ8gA) where he says that if you plug your laptop/desktop into the switch you can adopt it that way
+
+The switch then updated itself after I tried to Adopt it
+
+Adoption failed
+
+Found a guide which says about using SSH to connect to the switch
+
+[Why does my UniFi hardware tell me "Adoption failed"? (3 Solutions!!)](https://www.youtube.com/watch?v=WHdyKfuouDI)
+
+Guice on how to setup SSH keys
+
+[UniFi - Adding SSH Keys to UniFi Devices](https://help.ui.com/hc/en-us/articles/235247068-UniFi-Adding-SSH-Keys-to-UniFi-Devices)
+
+Found this guide regarding connecting to the switch via SSH
+
+[Unifi Switch CLI Commands](https://www.youtube.com/watch?v=H68f4HZMGH8)
+
+The above was a little technical and also vague in regards to resolving failed adoption issues
+
+[Different ways to adopt unifi devices](https://www.youtube.com/watch?v=4p96fPY-8RY)
+
+This guys is really good and broke things down. Installed LAN Scan from the appstore to view devices on my network
+
+When scanning I could not find the device even though it was plugged into my laptop via a port replicator
+
+Tried to plug it into the router again, it then said getting ready and adopted
+
+### Fixing WiFiman
+
+I need to read this when researching "Ubiquiti WiFiman"
+
+[I’ve turned on WiFiMan support and I’m connected to a UniFi Network, any ideas why Signal Mapper is grayed out/how to fix this?](https://www.reddit.com/r/Ubiquiti/comments/v3p33c/ive_turned_on_wifiman_support_and_im_connected_to/)
+
+### Test results from Dan's room
+
+Tested the WiFi in Dan's room with the AP under the router
+
+SSID: Test
+Download: 56.02 Mbps
+Upload: 17.38 Mbps
+
+SSID: Beaufoys
+Download: 7.26 Mbps
+Upload: 6.03 Mbps
+
+SSID: TALKTALK
+latency error
+
+
+### UDM vs UDR
+
+[UniFi Dream Machine vs UniFi Dream Router \| which is the right router for you?](https://www.youtube.com/watch?v=nML_kqFpRSQ)
+
+You can only use Unifi networking stuff and cannot run protect as well when using the UDM therefore it is not fit for purpose
+
+[UDR Fail or Success?](https://www.youtube.com/watch?v=E6K2nITRdeA)
+
+He had issues which were resolved with a software update
+
+
+
+## Configuration from Unifi-Controller
+
+[Unifi Network Optimization](https://www.youtube.com/watch?v=NCnRhYGMzvA)
+
+
+end 00:17
+start 11:15
+
+Last night setup
+
+Router -> 8 port PoE switch -> AP (Router)
+                            -> AP (Kitchen)
+
+Connected some devices up too, all work. The speeds are no better in the lounge for some reason (they were pretty much maxed anyway)
+
+When looking at the client list there are some random devices which were only showing their MAC addresses with no additioanl information
+
+I tried to kick these off then network but they rejoined. I've checked my apple watch and it was connected therefore it must have been shared by my phone / macbook
+
+changed the SSID then the switch was stuck offline
+
+end 12:30
+
+start 15:33
+
+noted down mac addresses for connected devices and gave them friendly name
+
+going to later set it up so that they auto connect to the network
+
+end 15:45
+
+start 19:16
+
+I just went and bought a G3 Flex camera for £35 which I found on facebook marketplace. I've just plugged into the PoE switch but just remered you cannot self host Unifi Protect therfore need to wait until the UDR arrives before I'm able to adpot it.
+
+The next thing to buy will be either a UDM SE to replace the UDR or to get a CloudKey Gen 2 if we choose to have more cameras / the UDR does not have enough storage or RAM.
+
+### Unblocking a device
+
+I found out how to unblock a device. The device will appear in the offline section when going to the "Client Devices" option from the left hand sidebar then choosing offline from the top navigation bar.
+
+The blocked devices will appear with a red dot next to them.
+
+![unblocking-device-new-GUI-1](/img/network-research/unblocking%20a%20device%201.png)
+
+![unblock-device-new-GUI-2](/img/network-research/unblock%20a%20device%202.png)
