@@ -175,3 +175,15 @@ git status
 git restore --staged _drafts/my-first-draft.markdown
 #the file then appeared in the source control section
 {% endhighlight %}
+
+<br>
+
+**Untracking all files then retracking all files** <br>
+
+<!-- CODE BLOCK -->
+{% highlight ruby %}
+git rm -r --cached .
+git add .
+#retracking all files
+{% endhighlight %}
+
