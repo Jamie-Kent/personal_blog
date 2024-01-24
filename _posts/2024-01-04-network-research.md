@@ -713,7 +713,131 @@ The blocked devices will appear with a red dot next to them.
 ![unblock-device-new-GUI-2](/img/network-research/unblock%20a%20device%202.png)
 
 
+**Setup pt19** <br>
+23/01/24 | start 18:14 | end 
 
+On review - check guest settings (it said about hotspot settings)
+
+<br>
+
+Modem -> router -> camera + 8-port-poe-lite
+
+<br>
+
+**Setting up the UDR** <br>
+- Setup the UDR via the Unifi Network app
+- Created a new SSID when setting up the UDR
+- Reset all devices for re-adoption
+- Re-adopted all devices
+- Updated UDR via Unifi Protect mobile app
+- Wiped adoption for G3-Flex
+- Managed to adopt 8-port-poe-lite via Unifi Network app
+- Adpopted devices: UDR, 8 port switch, 4 port switch, G3 Flex
+- Stopped running the local server, from site selector it went grey
+- Adopted U6 pro in Dan's room
+
+<br>
+
+**Wiring** <br>
+- Wired everything into an extension lead
+
+<br><br>
+
+## Network Configuration
+Explanation on all advanced settings within the Unifi-Controller <br>
+[UniFi's Advanced Wi-Fi Settings Explained](https://www.reddit.com/r/Ubiquiti/comments/r0dh9p/unifis_advanced_wifi_settings_explained/)
+
+**Reasons for creating a VLAN** <br>
+1. **Security:** <br>
+If a less secure device like a **Chrome casts**, **Printers** etc is hacked, it will not have access to the rest of the network which has devices like computers, phones, tablets etc are on.
+2. **Congestion:** <br>
+The more devices added to the network, the more congestion. 
+
+<br><br>
+
+### Creating IoT Network
+1. Disable "Auto Scale Network"
+2. Gateway/Subnet mask = 192.169.2.1 -> 192.168.107.1
+
+**Advanced Configuration:** <br>
+1. Auto -> Manual
+2. VLAN ID = 2 -> 107
+3. Multicast DNS = Enable
+    - This will allow devices on the main network to discover devices on the IoT network. This allows the communication between the devices and facilates things like streaming to chrome cast from mobile phone.
+4. "Add Network"
+
+<br><br>
+
+### Creating Guest Network
+1. Disable "Auto Scale Network"
+2. 192.168.2.1 -> 192.168.10.1
+
+**Advanced Configuration:** <br>
+1. VLAN ID = 2 -> 10
+2. Network Type = Guest Network
+    - This tells the devices that they're alone and that they cannot see any devices on the network. The only thing they can see is the internet. Two devices which are both on the guest network cannot communicate.
+3. Disable Multicast DNS
+    - Don't want these devices to be able to communciate with chrome cast etc
+4. Add Network
+
+<br><br>
+
+### Creating Cameras Network
+1. Disable "Auto Scale Network"
+2. 192.168.2.1 -> 192.168.20.1
+
+**Advanced Configuration:** <br>
+1. VLAN ID = 2 -> 10
+2. Disable Multicast DNS
+3. Add Network
+
+<br><br>
+
+
+## WiFi Networks
+
+### Main network
+1. Settings>WiFi>Create New
+2. Network = Default
+3. Create WiFi Network
+
+<br>
+
+### IoT Network
+1. Settings>WiFi>Create New
+2. Add "_IoT" onto the end of the network name
+3. Network = IoT
+4. Turn 5Ghz WiFi band off
+    - IoT devices generally connect better to 2.4Ghz networks. They struggle with combined SSID's (2.4Ghz + 5Ghz under the same network name)
+5. Create WiFi Network
+
+<br>
+
+### Guest Network
+1. Settings>WiFi>Create New
+2. Add "_Guest" onto the end of the network name
+3. Network = GuestNet
+4. Create WiFi Network
+
+<br>
+
+## Firewall Rules
+
+<br><br>
+
+**WiFi Connectivity** <br>
+- Mapped out the house on my phone 2x times
+    - Kitchen AP not picked up
+    - Dan's room AP not picked up
+
+
+
+<br>
+
+**MAC address privacy** <br>
+[[Solved] UniFi Binding: Dealing with MAC Randomization](https://community.openhab.org/t/solved-unifi-binding-dealing-with-mac-randomization/128816)
+
+I found out that Apple hide the MAC addresses for their devices by giving the router a fake MAC address.
 
 
 
@@ -875,4 +999,4 @@ The blocked devices will appear with a red dot next to them.
 - Styling network-research page
 - moved all time tracking to the bottom of the page
 - continued to sort out the contents section
-- commited page as 
+- commited page at pt18
