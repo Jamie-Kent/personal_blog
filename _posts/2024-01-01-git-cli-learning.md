@@ -159,3 +159,19 @@ Git pull
 22:52-23:19
 <br>
 Writing up learning notes in markup
+
+<br><br>
+
+**Restoring a removed file** <br>
+
+<!-- CODE BLOCK -->
+{% highlight ruby %}
+git rm "_drafts" -r
+#removed my-first-draft.markdown
+
+git status
+#checked status of staged files
+
+git restore --staged _drafts/my-first-draft.markdown
+#the file then appeared in the source control section
+{% endhighlight %}
