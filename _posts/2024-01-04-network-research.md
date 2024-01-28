@@ -840,8 +840,111 @@ The more devices added to the network, the more congestion.
 I found out that Apple hide the MAC addresses for their devices by giving the router a fake MAC address.
 
 
+<br>
+
+Research <br>
+27/01/24 | start | end 15:31
+
+- recabled network station
+- setup powerline adapter from sofa to tv
+- moved IoT devies to the IoT network
+- Removed the powerline network
+- created new patching table
+
+<br>
+
+Research <br>
+27/01/24 | start 19:35 | end 19:55 |
+
+- sstp vs utp 
+
+<br>
+
+Research <br>
+27/01/24 | start 21:58 | end  | -15 min
+
+- setup firewall rules
+- fixed unifi-controller toplogy by unplugging AP
+- Could not find threat managment
+- Could not work out how to change to legacy layout
+
+<br>
+
+Continuation of [2022 Complete Unifi Setup Guide](https://www.youtube.com/watch?v=kGBFkIzf6x0&t=711s)
 
 
+### Unifi-Network Configuration
+
+**Firewall Rules** <br>
+
+**Path:** Security>Firewall rules>LAN>Create Entry
+
+
+**Block IoT from LAN** <br>
+
+![block iot from lan configuration](/img/network-research/firewall%20rules/Block%20IoT%20from%20LAN.png)
+
+**Block LAN from IoT** <br>
+
+![block lan from iot configuration](/img/network-research/firewall%20rules/Block%20LAN%20from%20IoT.png)
+
+**Block cameras from LAN** <br>
+
+![block cameras from lan configuration](/img/network-research/firewall%20rules/Block%20cameras%20from%20LAN.png)
+
+**Block LAN from Cameras** <br>
+
+![block lan from cameras configuration](/img/network-research/firewall%20rules/Block%20LAN%20from%20cameras.png)
+
+**Block cameras from IoT** <br>
+
+![block cameras from iot configuration](/img/network-research/firewall%20rules/Block%20cameras%20from%20IoT.png)
+
+**Block IoT from Cameras** <br>
+
+![block iot from cameras configuration](/img/network-research/firewall%20rules/Block%20IoT%20from%20cameras.png)
+
+**Setting up exclusions** <br>
+https://youtu.be/kGBFkIzf6x0?si=1dfBgWGH6QZrm8Xg&t=1436
+
+You might want to do this if you want an apple tv which is on the IoT network to be able to see a Plex server which is on the main network
+
+Follow above
+
+**Threat Management** <br>
+Turn this on
+
+Trying to find where it's located on the UDR
+
+**Mapping ports to VLAN's** <br>
+This can be easily done
+
+### Unfi-Protect Configuration
+
+G3 Flex > Recording
+
+Recording mode = always
+
+Frame Rate = 25 (max)
+Image Quality = 100% (max)
+
+Motion detection settings: <br>
+1 second <br>
+10 seconds <br>
+10 seconds <br>
+
+
+G3 Flex > Settings
+
+**Camera:** <br>
+Status light = disable <br>
+
+**Overlay Information:** <br>
+Time = enable <br>
+Name = enable <br>
+Logo = disable <br>
+
+If you have G3 Instant as it's WiFi it can go on the main WiFi network
 
 <br><br><br><br><br><br><br>
 
