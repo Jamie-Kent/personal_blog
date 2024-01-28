@@ -867,6 +867,7 @@ Research <br>
 - fixed unifi-controller toplogy by unplugging AP
 - Could not find threat managment
 - Could not work out how to change to legacy layout
+- Tested the motion detection, had to adjust the activation sensitivity to high
 
 <br>
 
@@ -945,6 +946,11 @@ Name = enable <br>
 Logo = disable <br>
 
 If you have G3 Instant as it's WiFi it can go on the main WiFi network
+
+**Night vision** <br>
+Activation Sensitivity = high
+
+When testing the recording at night it didn't pick me up on low when creeping
 
 <br><br><br><br><br><br><br>
 
