@@ -5,7 +5,73 @@ date: 2024-01-04 23:11 +0000
 categories: learning networking
 ---
 
+
 <a name="readme-top"></a>
+
+
+
+<h2>Overview</h2>
+<ul>
+<h2>Unifi Networks</h2>
+    <li><a href="">Typical Setups</a></li>
+    <li><a href="">Required Components</a></li>
+    <li><a href="">Access Points</a></li>
+        <li><a href="">2.4ghz & 5ghz</a></li>
+        <li><a href="">MIMO</a></li>
+        <li><a href="">U6+ vs U6 Lite vs U6 Pro</a></li>
+    <li><a href="">Unifi Gateway</a></li>
+    <li><a href="">Unifi-Controller</a></li>
+        <li><a href="">Self-host options</a></li>
+        <li><a href="">Self-host setup</a></li>
+    <li><a href="">Unifi Switches</a></li>
+        <li><a href="">PoE options</a></li>
+        <li><a href="">Power Requirements</a></li>
+        <li><a href="">Injector vs Switch</a></li>
+        <li><a href="">Unifi Switch?</a></li>
+    <li><a href="">UDM vs UDR</a></li>
+    <li><a href="">UDMP & UDM SE</a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href="">Adoption failed</a></li>
+    <li><a href=""></a></li>
+    <li><a href="">WiFi Man</a></li>
+    <li><a href=""></a></li>
+    <li><a href="">Intitial order</a></li>
+    <li><a href=""></a></li>
+    <li><a href="">Unblocking a device</a></li>
+    <li><a href="">UDR Setup</a></li>
+    <li><a href="">Network Configuration</a></li>
+        <li><a href="">WiFi Networks</a></li>
+        <li><a href="">Firewall Rules</a></li>
+            <li><a href="">Exclusions (Plex etc)</a></li>
+        <li><a href="">MAC addres whitelist</a></li>
+</ul>
+
+<ul>
+    <li><a href="">Unifi Protect</a></li>
+        <li><a href="">G4 vs Ring</a></li>
+        <li><a href="">G3 vs Blink vs Arlo</a></li>
+        <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href="">Configuration</a></li>
+    <li><a href=""></a></li>
+        <li><a href="">Night settings (sens)</a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+</ul>
+
+
+
 
 <ul>
     <li><a href="#overview">Overview</a></li>
@@ -13,21 +79,22 @@ categories: learning networking
     <a href="#unifi-network-research">Unifi Network Research</a></li>
         <ul>
         <li><a href="#typical-setups">Typical Setups</a></li>
-        <li>Is it worth it / why switch</li>
-        <li>Best AP</li>
-    <li><a href="#u6">U6+</a></li>
+        <li>Is Ubiquiti worth it / why switch</li>
+        <li>Access Points (AP)</li>
             <ul>
+                <li><a href="#u6">U6+ Research</a></li>
+                
+                    <li><a href="#order">Order</a></li>
+                    <li><a href="#u6-product-page">U6+ Product Page</a></li>
+                    <li><a href="#vlan-for-cameras">U6+ vs vs U6 Lite</a></li>
+                    <li><a href="#vlan-for-cameras">Power reqirements</a></li>
+                <ul>
+                <ul>
                 <li><a href="#order">Order</a></li>
-                <li><a href="#u6-product-page">U6+ Product Page</a></li>
-                <li><a href="#vlan-for-cameras">U6+ vs vs U6 Lite</a></li>
-                <li><a href="#vlan-for-cameras">Power reqirements</a></li>
-            <ul>
-            <ul>
-            <li><a href="#order">Order</a></li>
-            <li><a href="#u6-product-page">Powering devices via PoE</a></li>
-            <li><a href="#vlan-for-cameras">How to work out power requirements</a></li>
-            <li><a href="#vlan-for-cameras">Alternative power sources</a></li>
-            
+                <li><a href="#u6-product-page">Powering devices via PoE</a></li>
+                <li><a href="#vlan-for-cameras">How to work out power requirements</a></li>
+                <li><a href="#vlan-for-cameras">Alternative power sources</a></li>
+            </ul>
         </ul>
         
     </ul>
@@ -44,11 +111,9 @@ categories: learning networking
     </ul>
 </ul>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  
-</details>
+
+
+
 
 
 <br>
