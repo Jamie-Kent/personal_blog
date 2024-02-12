@@ -9,151 +9,100 @@ categories: learning networking
 <a name="readme-top"></a>
 
 
-
-<h2>Overview</h2>
-<ul>
-<h2>Unifi Networks</h2>
-    <li><a href="">Typical Setups</a></li>
-    <li><a href="">Required Components</a></li>
-    <li><a href="">Access Points</a></li>
-        <li><a href="">2.4ghz & 5ghz</a></li>
-        <li><a href="">MIMO</a></li>
-        <li><a href="">U6+ vs U6 Lite vs U6 Pro</a></li>
-    <li><a href="">Unifi Gateway</a></li>
-    <li><a href="">Unifi-Controller</a></li>
-        <li><a href="">Self-host options</a></li>
-        <li><a href="">Self-host setup</a></li>
-    <li><a href="">Unifi Switches</a></li>
-        <li><a href="">PoE options</a></li>
-        <li><a href="">Power Requirements</a></li>
-        <li><a href="">Injector vs Switch</a></li>
-        <li><a href="">Unifi Switch?</a></li>
-    <li><a href="">UDM vs UDR</a></li>
-    <li><a href="">UDMP & UDM SE</a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href="">Adoption failed</a></li>
-    <li><a href=""></a></li>
-    <li><a href="">WiFi Man</a></li>
-    <li><a href=""></a></li>
-    <li><a href="">Intitial order</a></li>
-    <li><a href=""></a></li>
-    <li><a href="">Unblocking a device</a></li>
-    <li><a href="">UDR Setup</a></li>
-    <li><a href="">Network Configuration</a></li>
-        <li><a href="">WiFi Networks</a></li>
-        <li><a href="">Firewall Rules</a></li>
-            <li><a href="">Exclusions (Plex etc)</a></li>
-        <li><a href="">MAC addres whitelist</a></li>
-</ul>
-
-<ul>
-    <li><a href="">Unifi Protect</a></li>
-        <li><a href="">G4 vs Ring</a></li>
-        <li><a href="">G3 vs Blink vs Arlo</a></li>
-        <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href="">Configuration</a></li>
-    <li><a href=""></a></li>
-        <li><a href="">Night settings (sens)</a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li
-</ul>
-
-
-
-
-<ul>
-    <li><a href="#overview">Overview</a></li>
-    <li>
-    <a href="#unifi-network-research">Unifi Network Research</a></li>
-        <ul>
-        <li><a href="#typical-setups">Typical Setups</a></li>
-        <li>Is Ubiquiti worth it / why switch</li>
-        <li>Access Points (AP)</li>
-            <ul>
-                <li><a href="#u6">U6+ Research</a></li>
-                
-                    <li><a href="#order">Order</a></li>
-                    <li><a href="#u6-product-page">U6+ Product Page</a></li>
-                    <li><a href="#vlan-for-cameras">U6+ vs vs U6 Lite</a></li>
-                    <li><a href="#vlan-for-cameras">Power reqirements</a></li>
-                <ul>
-                <ul>
-                <li><a href="#order">Order</a></li>
-                <li><a href="#u6-product-page">Powering devices via PoE</a></li>
-                <li><a href="#vlan-for-cameras">How to work out power requirements</a></li>
-                <li><a href="#vlan-for-cameras">Alternative power sources</a></li>
-            </ul>
-        </ul>
-        
-    </ul>
-    <li>Unifi gateways - is it required</li>
-   
-</ul>
-<li><a href="#unifi-protect-research">Unifi Protect Research</a></li>
-        <ul>
-            <li><a href="#vlan-for-cameras">VLAN for cameras</a></li>
-            <li><a href="#vlan-for-cameras">G5 Bullet review</a></li>
-            <li><a href="#vlan-for-cameras">Storage requirements</a></li>
-            <li><a href="#vlan-for-cameras">Streaming to Synology NAS</a></li>
-        </ul>
-    </ul>
-</ul>
-
-
-
-
+<p><i>A table of contents  will be inserted here</i></p>
 
 
 <br>
 
 
 
-## Overview
-The Wi-Fi in our house is currently bad when not close to the router. We have multiple networks setup within the house as we have a router which has direct connections to 3 rooms in the house and then to a seperate mesh network. The mesh network is then scattered around the house and creates it's own seperate network. This means we have 2x SSID's and there is conflict in the house between the networks. In the furthest parts of the house the internet signal is poor. I've tried to setup an AP on one side but the AP signals kept dropping (I think the AP is at fault).
+<h2>Overview</h2>
 
-The idea of this research is to allow for a new network to be setup using only Ubiquti kit where possible or at least Ubiquti AP's as they're supposed to be good and easy to manager / nice to manage with the Unifi-controller giving a good idea on what's going on on the network and displaying things in a user friendly way (showing the topology of the network, nice UI etc).
+<p><b>Why rework the current network? </b></p>
+<p>
+    We have multiple networks setup within the 
+    house as we have a router which has direct connections to 
+    3 rooms in the house and then to a seperate mesh network. 
+    The mesh network is then scattered around the house and 
+    creates it's own seperate network. This means we have 2x 
+    SSID's and there is conflict in the house between the 
+    networks.
+</p>
+<p>
+    The Wi-Fi in our house is currently bad when not close to 
+    the router. W. In the furthest parts of the house the internet 
+    signal is poor. When trying to setup an AP in one side of the 
+    house the signal kept dropping, this is likely to the AP being 
+    faulty.
+</p>
+
+<br>
+
+<p><b>What are the plans with the new network? </b></p>
+<p>
+    The idea of this research is to allow for a new network to be 
+    setup using only Ubiquti kit where possible or at least Ubiquti 
+    AP's as they're supposed to be good and easy to manage with the 
+    Unifi-controller software as it shows the network in a user 
+    friendly way (showing the topology of the network, nice UI etc)
+</p>
+
+
+
+
+<br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## Unifi Network Research
+<h2>Unifi Network Research</h2>
 
 <h3 id="typical-setups">Typical Setups</h3>
 
-[YouTube: 2022 Complete Unifi Setup Guide](https://www.youtube.com/watch?v=kGBFkIzf6x0)
+<a href="https://www.youtube.com/watch?v=kGBFkIzf6x0">YouTube: 2022 
+    Complete Unifi Setup Guide</a>
 
-The first part of this video is useful to familiarize yourself with what kit would be needed for a typical network. The second half can be used to configure your network once you have all hardware setup.
+<br><br>
 
-**Hardware used:** <br>
-- Unifi Cloud Gateway:
-    - UDM SE (UDM-SE)
-- Switch:
-    - Unifi Flex Mini 5-Port (USW-Flex-Mini)
-- Access Points:
-    - U6 Lite (U6-Lite)
-    - U6 Pro (U6-Pro)
-- Cameras:
-    - G3 Flex (UVC-G3-FLEX)
-    - G3 Instant (UVC-G3-INS)
+<p>The first part of this video is useful to familiarize yourself with 
+    what kit would be needed for a typical network. The second half can be used to 
+    configure your network once you have all hardware setup.</p>
 
-**UDM SE** <br>
-Roles:
-- Unifi Console
-- Unifi Controller
-- Router
-- Inbuilt switch
+<p><b>Hardware used:</b></p>
+<ul>
+    <li><b>Unifi Cloud Gateway:</b></li>
+    <ul>
+        <li>UDM SE (UDM-SE)</li>
+    </ul>
+    <li><b>Switch:</b></li>
+    <ul>
+        <li>Unifi Flex Mini 5-Port (USW-Flex-Mini)</li>
+    </ul>
+    <li><b>Access Points:</b></li>
+    <ul>
+        <li>U6 Lite (U6-Lite)</li>
+        <li>U6 Pro (U6-Pro)</li>
+    </ul>
+    <li><b>Cameras:</b></li>
+    <ul>
+        <li>G3 Flex (UVC-G3-FLEX)</li>
+        <li>G3 Instant (UVC-G3-INS)</li>
+    </ul>
+</ul>
+
+<br>
+
+<p><b>UDM SE</b></p>
+
+<p><b>Roles:</b></p>
+<ul>
+    <li>Unifi Console</li>
+    <li>Unifi Controller</li>
+    <li>Router</li>
+    <li>Inbuilt switch</li>
+</ul>
+
+<br>
 
 UDM SE vs UDM Pro:
 - Integrated 8-port PoE/PoE+ switch vs no PoE
@@ -985,37 +934,59 @@ Trying to find where it's located on the UDR
 **Mapping ports to VLAN's** <br>
 This can be easily done
 
-### Unfi-Protect Configuration
-
-G3 Flex > Recording
-
-Recording mode = always
-
-Frame Rate = 25 (max)
-Image Quality = 100% (max)
-
-Motion detection settings: <br>
-1 second <br>
-10 seconds <br>
-10 seconds <br>
+<h3>Unfi-Protect Configuration</h3>
 
 
-G3 Flex > Settings
 
-**Camera:** <br>
-Status light = disable <br>
+<p><b>G3 Flex > Recording:</b></p>
+<ul>
+    <li>Recording mode = always</li>
+    <li>Frame Rate = 25 (max)</li>
+    <li>Image Quality = 100% (max)</li>
+</ul>
 
-**Overlay Information:** <br>
-Time = enable <br>
-Name = enable <br>
-Logo = disable <br>
+<br>
 
-If you have G3 Instant as it's WiFi it can go on the main WiFi network
+<p><b>Motion detection settings:</b></p>
+<ul>
+    <li>1 second</li>
+    <li>10 seconds</li>
+    <li>10 seconds</li>
+</ul>
 
-**Night vision** <br>
-Activation Sensitivity = high
+<br>
 
-When testing the recording at night it didn't pick me up on low when creeping
+<p><b>G3 Flex > Settings:</b></p>
+<p><b>Camera:</b></p>
+<ul>
+    <li>Status light = disable </li>
+</ul>
+
+<br>
+
+<p><b>Overlay Information:</b></p>
+<ul>
+    <li>Time = enable </li>
+    <li>Name = enable </li>
+    <li>Logo = disable</li>
+</ul>
+
+
+<p><b>Instant cameras: </b>The instant cameras can go on the main network as they're WiFi 
+    cameras and will generally be left indoors</p>
+
+<br>
+
+<p><b>Night vision:</b></p>
+<ul>
+    <li>Activation Sensitivity = high</li>
+</ul>
+
+<br>
+
+<p><b>Testing: </b>When testing the recording at night it didn't pick me up on low when creeping
+</p>
+
 
 <br><br><br><br><br><br><br>
 
@@ -1031,7 +1002,6 @@ When testing the recording at night it didn't pick me up on low when creeping
 
 <br>
 
-
 <p><b>Research pt2</b></p>
 <p>05/01/24 | 19:46 | 23:35 | 1 hour 29 min</p>
 <ul>
@@ -1044,7 +1014,6 @@ When testing the recording at night it didn't pick me up on low when creeping
     <li>Further PoE research</li>
     <li>Researched power requirements</li>
     <li>PoE switch vs Injector</li>
-    <li></li>
 </ul>
 
 <br>
@@ -1081,119 +1050,160 @@ When testing the recording at night it didn't pick me up on low when creeping
 
 <br>
 
+<h4><b>Research pt6</b></h4>
+<p>14/01/24 | start 9:28 | end 11:52 | 2 hours 24 minutes</p>
+<ul>
+    <li>Researched cameras</li>
+    <li>Researched how WISP's work</li>
+    <li>Researched QNAP vs Synology</li>
+    <li>Researching Unifi Protect on Synology NAS</li>
+    <li>Researching self-hosting services</li>
+</ul>
 
-**Research pt6** <br>
-14/01/24 | start 9:28 | end 11:52 | 2 hours 24 minutes
+<br>
 
-- Researched cameras
-- Researched how WISP's work
-- Researched QNAP vs Synology
-- Researching Unifi Protect on Synology NAS
-- Researching self-hosting services
+<h4><b>Research pt7</b></h4>
+<p>14/01/24 | start 17:34 | end 18:15 | 41 minutes</p>
+<ul>
+    <li>Patched network port into the wall</li>
+</ul>
 
+<br>
 
+<h4><b>Research pt8</b></h4>
+<p>15/01/24 | start 7:55 | end 8:02 | 7 minutes</p>
+<ul>
+    <li>Researched camera install in a doctors office</li>
+</ul>
 
-**Research pt7** <br>
-14/01/24 | start 17:34 | end 18:15 | 41 minutes
+<br>
 
-- Patched network port into the wall
+<h4><b>Research pt9</b></h4>
+<p>19/01/24 | start 18:56 | end 19:37 | 41 minutes</p>
+<ul>
+    <li>Downloaded the unifi-controller then self-hosted it from my macbook</li>
+    <li>Fixed issues when setting up the Access Point by 
+        wiring it directly into the router</li>
+</ul>
 
+<br>
 
+<h4><b>Research pt10</b></h4>
+<p>19/01/24 | start 20:53 | end 00:17 | 3 hours 24 minutes</p>
+<ul>
+    <li>Created new network within unifi-controller</li>
+    <li>Encountered adoption issues</li>
+    <li>Researched how to SSH to switch</li>
+    <li>Installed LAN Scan to find the IP</li>
+    <li>Tried to reset and power cylce the switch again which 
+        resolved the issue</li>
+    <li>Tried to fix WiFiman</li>
+    <li>Tested the Wi-Fi from brothers room</li>
+    <li>Researched the difference between UDM and UDR</li>
+    <li>Researched how to configure the network</li>
+</ul>
 
-**Research pt8** <br>
-15/01/24 | start 7:55 | end 8:02 | 7 minutes
+<br>
 
-- Researched camera install in a doctors office
-
-
-
-**Research pt9** <br>
-19/01/24 | start 18:56 | end 19:37 | 41 minutes
-
-- Downloaded the unifi-controller then self-hosted it from my macbook
-- Fixed issues when setting up the Access Point by wiring it directly into the router
-
-
-
-**Research pt10** <br>
-19/01/24 | start 20:53 | end 00:17 | 3 hours 24 minutes
-
-- Created new network within unifi-controller
-- Encountered adoption issues
-- Researched how to SSH to switch
-- Installed LAN Scan to find the IP
-- Tried to reset and power cylce the switch again which resolved the issue
-- Tried to fix WiFiman
-- Tested the Wi-Fi from brothers room
-- Researched the difference between UDM and UDR
-- Researched how to configure the network
-
-
-
-**Research pt11** <br>
-20/01/24 | start 11:15 | end 12:30 | 1 hour 15 minutes
-
-- Setup PoE switch
-- Tested speeds from the living room
-- Assessed currently connected clients to setup Alias'
-- Realised that the MAC addresses were changing
-
-
-
-**Research pt12** <br>
-20/01/24 | start 15:33 | end 15:45 | 12 minutes
-
-- Noted down MAC addresses so that I may be able to setup auto-connecting or something similar like my work has
-
-
-
-**Research pt13** <br>
-20/01/24 | start 19:16 | end 21:20 | 2 hours 4 minutes
-
-- Researching how to unblock devices
-- Other research?
+<h4><b>Research pt11</b></h4>
+<p>20/01/24 | start 11:15 | end 12:30 | 1 hour 15 minutes</p>
+<ul>
+    <li>Setup PoE switch</li>
+    <li>Tested speeds from the living room</li>
+    <li>Assessed currently connected clients to setup Alias'</li>
+    <li>Realised that the MAC addresses were changing</li>
+</ul>
 
 
-**Research pt14** <br>
-20/01/24 | start 21:20 | end 21:41 | 21 minutes
+<br>
 
-- Styling network-research page
+<h4><b>Research pt12</b></h4>
+<p>20/01/24 | start 15:33 | end 15:45 | 12 minutes</p>
+<ul>
+    <li>Noted down MAC addresses so that I may be able to 
+        setup auto-connecting or something similar like my 
+        work has</li>
+</ul>
 
+<br>
 
-**Ring gen 2 vs Unifi G4 (non-pro) pt15** <br>
-20/01/24 | start 22:35 | end 23:07 | 32 mins
-
-- Researched G4 doorbell vs G4 Pro doorbell
-- Researched Ubiquiti vs Ring doorbells & prices
-
-
-**Updating the Table of contents pt16** <br>
-21/01/24 | start 8:36 | end 10:26 | 1 hour 50 minutes
-
-- Researched how to make a table of contents
-
-
-**Fixing formatting pt17** <br>
-21/01/24 | start 11:29 | end 15:09 | 3 hours 40 minutes
-
-- Styling network-research page
-- Researched Ubiquiti vs Blink / Arlo
+<h4><b>Research pt13</b></h4>
+<p>20/01/24 | start 19:16 | end 21:20 | 2 hours 4 minutes</p>
+<ul>
+    <li>Researching how to unblock devices</li>
+</ul>
 
 
-**Fixing formatting pt18** <br>
-21/01/24 | start 21:53 | end 23:17 | 1 hour 24 minutes
+<br>
 
-- Styling network-research page
-- moved all time tracking to the bottom of the page
-- continued to sort out the contents section
-- commited page at pt18
+<h4><b>Research pt14</b></h4>
+<p>20/01/24 | start 21:20 | end 21:41 | 21 minutes</p>
+<ul>
+    <li>Styling network-research page</li>
+</ul>
+
+<br>
+
+<h4><b>Ring gen 2 vs Unifi G4 (non-pro) pt15</b></h4>
+<p>20/01/24 | start 22:35 | end 23:07 | 32 mins</p>
+<ul>
+    <li>Researched G4 doorbell vs G4 Pro doorbell</li>
+    <li>Researched Ubiquiti vs Ring doorbells & prices</li>
+</ul>
+
+<br>
+
+<h4><b>Updating the Table of contents pt16</b></h4>
+<p>21/01/24 | start 8:36 | end 10:26 | 1 hour 50 minutes</p>
+<ul>
+    <li>Researched how to make a table of contents</li>
+</ul>
+
+
+<br>
+
+<h4><b>Fixing formatting pt17</b></h4>
+<p>21/01/24 | start 11:29 | end 15:09 | 3 hours 40 minutes</p>
+<ul>
+    <li>Styling network-research page</li>
+    <li>Researched Ubiquiti vs Blink / Arlo</li>
+</ul>
+
+<br>
+
+<h4><b>Fixing formatting pt18*</b></h4>
+<p>21/01/24 | start 21:53 | end 23:17 | 1 hour 24 minutes</p>
+<ul>
+    <li>Styling network-research page</li>
+    <li>Moved all time tracking to the bottom of the page</li>
+    <li>Continued to sort out the contents section</li>
+    <li>Commited page at pt18</li>
+</ul>
+
+<br>
 
 <h4><b>Formatting</b></h4>
-<p>09/02/24 | start 18:35 | end 18:51 | </p>
+<p>09/02/24 | start 18:35 | end 18:51 | 16 minutes</p>
 <ul>
     <li>Planning headings</li>
-    <li></li>
-    <li></li>
+</ul>
+
+<br>
+
+<h4><b>Creating firewall rules to allow speakers through IoT</b></h4>
+<p>12/02/24 | start 21:38 | end 22:38 | 60 minutes</p>
+<ul>
+    <li>Figured out how to allow certain addresses through the firewall</li>
+</ul>
+
+<br>
+
+<h4><b>Converting page from markdown to HTML</b></h4>
+<p>12/02/24 | start 22:38 | end 23:20 | 58 minutes</p>
+<ul>
+    <li>Removed Table of contents</li>
+    <li>Converted the whole time tracking section</li>
+    <li>Reworded and reformatting the Overview section</li>
 </ul>
 
 </details>
