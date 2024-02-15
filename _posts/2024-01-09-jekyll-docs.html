@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reading through Jekyll docs"
-date: 2024-01-09 19:12 +0000
+date: 2024-01-09 19:12
 categories: learning jekyll
 permalink: jekyll-basics-learning
 ---
@@ -57,11 +57,11 @@ permalink: jekyll-basics-learning
 
 <br><br>
 
-<h3>Step by Step Tutorial</h3>
+<h3>Compiling the site</h3>
 
 <h4>Setup</h4>
 
-<br>
+<p>To build the site</p>
 
 <code>
     jekyll build
@@ -69,22 +69,10 @@ permalink: jekyll-basics-learning
 
 <br><br>
 
-<p>Builds the site</p>
-
-<br>
+<p>To compile the code then host this on localhost:4000</p>
 
 <code>
     jekyll serve
-</code>
-
-<br><br>
-
-<p>runs build and also hosts it on localhost:4000</p>
-
-<br>
-
-<code>
-    jekyll serve --livereload
 </code>
 
 <br><br>
@@ -94,7 +82,7 @@ permalink: jekyll-basics-learning
 </p>
 
 <code>
-    --host or --port
+    jekyll serve --livereload
 </code>
 
 <br><br>
@@ -102,7 +90,14 @@ permalink: jekyll-basics-learning
 <p>These two flags can be used to manually set the address / port if there are conflicts locally
 </p>
 
-<br>
+
+<code>
+    --host or --port
+</code>
+
+<br><br>
+
+
 
 
 
@@ -121,7 +116,8 @@ permalink: jekyll-basics-learning
 
 <h3>What is Liquid</h3>
 <p>
-    Liquid allows for Jekyll to be used to template by using 3 main components
+    Liquid is the thing which drives the templating system used by Jekyll. It does this using 
+    three main components
 </p>
 
 <br>
@@ -137,14 +133,22 @@ permalink: jekyll-basics-learning
 
 <h3>Objects</h3>
 
+<p><b>Example: </b></p>
+
 <p>
-    Uses
+    <code>
+        {% raw %}
+        {{ page.title }}
+        {% endraw %}
+    </code>
+    
+</p>
+    
+<p>
+    The above is a variable, if printed it would display the title defined in the pages header 
+    which is written inbetween the liquid tags
 </p>
 
-<br><br><br><br><br>
-
-
-{{ change }}
 
 
 <br><br><br><br><br>
@@ -157,11 +161,31 @@ permalink: jekyll-basics-learning
 
 <br><hr><br>
 
+<h3>Front matter defaults</h3>
+<a href="https://jekyllrb.com/docs/configuration/front-matter-defaults/">Defaults article</a>
 
+<br><br>
 
+<p>
+    You can setup front matter defaults within the _config.yml file. To do 
+    this you would first define a scope e.g. any file in the _projects folder 
+    then you would set certain default variables
+</p>
 
+<p>
+    You would set a default such as the post "type"
+</p>
 
+<br>
 
+<p><b>Things to note:</b></p>
+<ul>
+    <li>Globbing causes perfomance issues</li>
+    <li>Presedence when defining from config is top to bottom, when 
+        defining from the post itself any liquid will overwrite the 
+        defaults which are showing on config
+    </li>
+</ul>
 
 
 <br><hr><br>
@@ -254,13 +278,17 @@ permalink: jekyll-basics-learning
 
 
 <details>
+<summary><b>Time Tracking</b></summary>
 
-<h4><b>Formatting headings</b></h4>
-<p>14/02/24 | start 22:44 | end | </p>
+<br>
+
+<h4><b>Research 2</b></h4>
+<p>14/02/24 | start 22:44 | end 00:10 | 1 hour 26 minutes</p>
 <ul>
-    <li>Formatted headings</li>
-    <li>Created TOC</li>
-    <li></li>
+    <li>Formatted headings for each section within the Jekll docs</li>
+    <li>Created TOC and linked to said headings</li>
+    <li>Complete initial research around Liquid and front matter</li>
+    <li>Touched on front matter defaults which can be added to the config.yml file</li>
 </ul>
 
 </details>
