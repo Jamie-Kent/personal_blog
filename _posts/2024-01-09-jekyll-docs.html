@@ -149,6 +149,35 @@ permalink: jekyll-basics-learning
     which is written inbetween the liquid tags
 </p>
 
+<br>
+
+<h3>Tags</h3>
+<h4>Control flow</h4>
+
+<p><b>Example: </b></p>
+
+<p>
+    <code>
+        {% raw %}
+        {% if customer.name == "kevin" %} <br>
+        &nbsp;&nbsp;&nbsp;Hey Kevin! <br>
+        {% elsif customer.name == "anonymous" %} <br>
+        &nbsp;&nbsp;&nbsp;Hey Anonymous! <br>
+        {% else %} <br>
+        &nbsp;&nbsp;&nbsp;Hi Stranger! <br>
+        {% endif %} <br>
+        {% endraw %}
+    </code>
+
+    
+</p>
+    
+<p>
+    The above is an if statement with else if statements. When it runs it will first check if the pages title contained 
+    within the liquid tags is "awesome shoes". If it is then it would output these shoes are 
+    awesome to
+</p>
+
 
 
 <br><br><br><br><br>
